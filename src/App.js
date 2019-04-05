@@ -1,9 +1,15 @@
-import React, { Component } from 'react';
+import React, { Fragment } from 'react';
+import { ThemeProvider } from 'styled-components';
 
-class App extends Component {
-    render() {
-        return <div className="App">CRA</div>;
-    }
-}
+import theme from './theme';
+import Reset from './components/_shared/Reset';
+
+const App = () => (
+    <ThemeProvider theme={theme}>
+        <Fragment>
+            <Reset />
+        </Fragment>
+    </ThemeProvider>
+);
 
 export default App;
