@@ -15,5 +15,6 @@ export default createGlobalStyle`
         font-size: ${p => p.theme.fontSize.normal};
         line-height: 1.7;
         color: ${p => p.theme.colors.gray};
+        padding: 30px;
     }
 `;
